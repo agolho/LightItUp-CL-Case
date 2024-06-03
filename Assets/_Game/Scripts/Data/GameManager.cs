@@ -2,6 +2,7 @@
 using HyperCasual;
 using UnityEngine;
 using LightItUp.Game;
+using LightItUp.Game.PowerUps;
 using LightItUp.Sound;
 using LightItUp.UI;
 
@@ -245,6 +246,9 @@ namespace LightItUp.Data
             {
                 UI_PopupRelayer.Instance.RemovePreviousHeldPopup();
             }
+            
+            // Initialize PowerUps
+            PowerUpService.Instance.OnLoadLevel(currentLevel);
             
             currentLevel.ConfirmGameLoadFinalized ();
         }

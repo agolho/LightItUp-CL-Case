@@ -1488,5 +1488,16 @@ namespace LightItUp.Game
             }
         }
         #endregion
+
+        
+        /// <summary>
+        /// Method for determining if the block is a standard block
+        /// Needed for missile targeting
+        /// </summary>
+        /// <returns></returns>
+        public bool IsStandardBlock()
+        {
+            return !useEffector && !useMove && !useRotation && !usePivotRotation && !useExplode;
+        }
     }
 }

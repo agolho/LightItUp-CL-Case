@@ -183,6 +183,22 @@ namespace LightItUp.UI
 			//feedbackPoints.text = "+" + p;
 			//feedbackPoints.GetComponent<Animator>().Play("ScorePoints");
 		}
+		
+		/// <summary>
+		/// Missile button reference
+		/// And methods to show and hide it
+		/// </summary>
+		public Button missilesButton;
+		public void ShowMissileButton()
+		{
+			missilesButton.gameObject.SetActive(true);
+		}
+		
+		public void HideMissileButton()
+		{
+			missilesButton.gameObject.SetActive(false);
+		}
+		
 
 		public void Update()
 		{

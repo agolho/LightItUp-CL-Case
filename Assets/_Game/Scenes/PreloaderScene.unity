@@ -6952,7 +6952,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 15, y: 1}
+  m_Size: {x: 16.875, y: 1}
   m_EdgeRadius: 0
 --- !u!1001 &560819843
 PrefabInstance:
@@ -14151,7 +14151,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 8, y: 0}
+  m_Offset: {x: 8.9375, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -15328,7 +15328,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 15, y: 1}
+  m_Size: {x: 16.875, y: 1}
   m_EdgeRadius: 0
 --- !u!1 &877802609
 GameObject:
@@ -15564,7 +15564,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -8, y: 0}
+  m_Offset: {x: -8.9375, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -19011,11 +19011,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 224287608613880858, guid: 0654574735289a446ae3ca1fbd3b45d2,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -236.10156
-      objectReference: {fileID: 0}
     - target: {fileID: 224353885026184430, guid: 0654574735289a446ae3ca1fbd3b45d2,
         type: 3}
       propertyPath: m_Pivot.x
@@ -19109,12 +19104,47 @@ PrefabInstance:
     - target: {fileID: 224968964128846276, guid: 0654574735289a446ae3ca1fbd3b45d2,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 342.9
+      value: 342.85
       objectReference: {fileID: 0}
     - target: {fileID: 224968964128846276, guid: 0654574735289a446ae3ca1fbd3b45d2,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 99.93
+      value: 88.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 1215432319958410397, guid: 0654574735289a446ae3ca1fbd3b45d2,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1215432319958410397, guid: 0654574735289a446ae3ca1fbd3b45d2,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1215432319958410397, guid: 0654574735289a446ae3ca1fbd3b45d2,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1854786672}
+    - target: {fileID: 1215432319958410397, guid: 0654574735289a446ae3ca1fbd3b45d2,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1215432319958410397, guid: 0654574735289a446ae3ca1fbd3b45d2,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ActivateSeekerPowerUp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1215432319958410397, guid: 0654574735289a446ae3ca1fbd3b45d2,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: LightItUp.Game.PowerUps.PowerUpService, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1215432319958410397, guid: 0654574735289a446ae3ca1fbd3b45d2,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0654574735289a446ae3ca1fbd3b45d2, type: 3}
@@ -19409,6 +19439,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 866e44f4b10e94d6a90cfae52da3f32a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1854786671
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1854786673}
+  - component: {fileID: 1854786672}
+  m_Layer: 0
+  m_Name: PowerUpService
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1854786672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1854786671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 567fcf62c5750495ca8b871495446ba9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  seekerMissileConfig: {fileID: 11400000, guid: 0157aabff7fae42beb119b22fe911417,
+    type: 2}
+--- !u!4 &1854786673
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1854786671}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1884643563
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20030,10 +20105,9 @@ MonoBehaviour:
     sources from which information is collected:\tBusiness or commercial purposes
     for collection, use and sharing:\tDisclosed for business purposes to the following
     categories of third parties:\tSold to the following categories of third parties:\nPersonal
-    and online identifiers (such as unique online identifiers, IP address)\tConsumers\n\n\n
-    \n\nMarketing;\nAdvertising;\n\nAuthentication;\n\nIdentity resolution;\n\nFraud
-    detection;\n\nFulfillment services; Facilitating transactions;\n\nAuditing related
-    to our interactions with you;\n\nLegal compliance;\n\nDetecting and protecting
+    and online identifiers (such as unique online identifiers, IP address)\tConsumers\n\n\n\n\nMarketing;\nAdvertising;\n\nAuthentication;\n\nIdentity
+    resolution;\n\nFraud detection;\n\nFulfillment services; Facilitating transactions;\n\nAuditing
+    related to our interactions with you;\n\nLegal compliance;\n\nDetecting and protecting
     against security incidents, fraud, and illegal activity;\n\nDebugging;\n\nPerforming
     services (for us or our service providers) such as account servicing, processing
     orders and payments, and analytics;\n\nInternal research for technological improvement;\n\nInternal
@@ -20070,8 +20144,8 @@ MonoBehaviour:
     one-time uses\n\nAffiliates;\nService providers; and\nGovernment agencies\tAffiliates
     that are not under common branding;\nAdvertising/marketing companies;\nAdvertising
     networks;\nData analytics providers; and\nSocial networks\nInferences drawn from
-    the above information about your predicted characteristics and preferences\n\n\n
-    \n\n \n\nConsumers\n \n\nMarketing;\nAdvertising;\n\nLegal compliance;\n\nDetecting
+    the above information about your predicted characteristics and preferences\n\n\n\n\n
+    \n\nConsumers\n \n\nMarketing;\nAdvertising;\n\nLegal compliance;\n\nDetecting
     and protecting against security incidents, fraud, and illegal activity;\n\nDebugging;\n\nPerforming
     services (for us or our service provider) such as account servicing, processing
     orders and payments, and analytics;\n\nInternal research for technological improvement;\n\nInternal
@@ -20780,7 +20854,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 1
-  m_Size: {x: 15, y: 30}
+  m_Size: {x: 16.875, y: 30}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

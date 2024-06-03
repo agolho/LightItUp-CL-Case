@@ -4,6 +4,7 @@ using UnityEngine;
 using LightItUp.Data;
 using LightItUp.Game;
 using System.Collections;
+using LightItUp.Game.PowerUps;
 
 namespace LightItUp
 {
@@ -81,6 +82,7 @@ namespace LightItUp
             unlitBlocks = new List<BlockController>();
             litBlocks = new List<BlockController>();
             walls = new List<Wall>();
+            missiles = new List<SeekerMissile>();
             if (!hasStartPos)
             {
                 if (Camera.main == null)
@@ -139,10 +141,14 @@ namespace LightItUp
         
             ProgressBlendTime();
             Rect r = fullZoom < 0.0001f ? GetBlendedRect() : LerpRect(GetBlendedRect(), GetFullLevelRect(), GameSettings.CameraFocus.blendCurve.Evaluate(fullZoom));
-            SetWantedValues(r);
+         
+            r = FollowMissiles(r);
+
             MoveTowardsWanted();
 
+            SetWantedValues(r);
 
+            
 			SetCamera (currentPosition, currentOrthoSize);
 
             DrawDebugRect(r);
@@ -286,7 +292,7 @@ namespace LightItUp
                 r = GetFullLevelRect();
             }
             else {
-                r = targets[0].rect;
+                    r = targets[0].rect;
             }
             for (int i = 1; i < targets.Count; i++)
             {
@@ -375,6 +381,43 @@ namespace LightItUp
         }
 
         #endregion
+
+        #region Seeker Missiles
+
+        /// <summary>
+        /// Returns a rect that includes all the missiles
+        /// Needed for camera focus to work with missiles
+        /// </summary>
+        /// <param name="r"></param>
+        /// <returns>"r"</returns>
+        
+        List<SeekerMissile> missiles;
+        private Rect FollowMissiles(Rect r)
+        {
+            foreach (var missile in missiles)
+            {
+                Rect missileRect = new Rect(missile.transform.position, Vector2.one);
+                r = IncludeRect(r, ExpandRect(missileRect, 4));
+            }
+
+            return r;
+        }
+
+        /// <summary>
+        /// Adding and removing missiles from the list
+        /// </summary>
+        /// <param name="missile"></param>
+        public void AddMissileTarget(SeekerMissile missile)
+        {
+            missiles.Add(missile);
+        }
+        public void RemoveMissileTarget(SeekerMissile missile)
+        {
+            missiles.Remove(missile);
+        }
+
+        #endregion
+
     }
 }
 
