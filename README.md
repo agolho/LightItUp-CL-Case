@@ -1,7 +1,7 @@
 # LightItUpQubic
 
 ## Added feature *Seeker Missiles*
-- Missile feature can be configured from {Assets/Resources/SeekerMissileData}
+- Missile feature can be configured from {Assets/_Game/Resources/SeekerMissileData.asset}
  - Missiles count indicates how many missiles will be fired on each button press
  - Missile speed can be lowered to build intensity and excitement
  - Power Up use limit indicates how many times this feature can be called on each level. Set to 0 to disable Seeker Missiles
